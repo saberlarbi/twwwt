@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 
 const adminprefix = "-";
-const devs = ['ID حقتك'];
+const devs = ['447112216123277335'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -26,10 +26,10 @@ return message.reply("**لا يمكنك تغيير الاسم يجب عليك ا
 client.user.setAvatar(argresult);
   message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
       } else     
-if (message.content.startsWith(adminprefix + 'setT')) {
+if (message.content.startsWith(adminprefix + 'T')) {
   client.user.setGame(argresult, "https://www.twitch.tv/idk");
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
 }
 });
 
-client.login("YOUR TOKEN HERE");
+client.login("NDQ3MTEyMjE2MTIzMjc3MzM1.DrysCA.gLxG0K6ddSaqzlJVcVi2ozj9yP4");
